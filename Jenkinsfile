@@ -5,6 +5,7 @@ pipeline {
       steps {
         bat 'npm install'
         bat 'npm run build'
+        bat 'tar -cvf dist.tar.gz dist'
       }
     }
     stage('Test') {
