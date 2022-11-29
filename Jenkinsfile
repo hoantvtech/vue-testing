@@ -17,6 +17,9 @@ pipeline {
     stage('Deploy') {
       steps {
         echo 'Deploying'
+        sshagent(credentials: ['ssh-remote-hoantv']) {
+          sh 'ssh -o StrictHostKeyChecking=no -l hoantv 103.101.162.121 touch jenkins1.txt'
+        }
       }
     }
   }
