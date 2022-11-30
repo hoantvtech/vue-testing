@@ -1,4 +1,4 @@
-ame: GitHub Trigger jenkins job
+name: GitHub Trigger jenkins job
 on: [push]
 jobs:
   build:
