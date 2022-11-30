@@ -17,4 +17,4 @@ jobs:
         url: "https://e281-222-252-16-153.ap.ngrok.io"
         user: "admin"
         token: ${{ secrets.JENKINS_TOKEN }}
-        job: "vue-testing"
+        job: "vue-testing,vue-pipeline"
