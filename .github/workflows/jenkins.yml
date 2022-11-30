@@ -1,5 +1,11 @@
 name: GitHub Trigger jenkins job
-on: [push]
+on:
+  push:
+    branches:
+      - develop
+  pull_request:
+    branches:
+      - develop
 jobs:
   build:
     name: Build
