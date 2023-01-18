@@ -43,6 +43,11 @@ const router = createRouter({
       name: "Suspense2Page",
       component: () => import("../views/suspense-2/MySuspense.vue"),
     },
+    {
+      path: "/composable",
+      name: "ComposablePage",
+      component: () => import("../views/composables/Main.vue"),
+    },
   ],
 });
 
