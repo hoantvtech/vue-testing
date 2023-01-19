@@ -1,0 +1,19 @@
+pipeline {
+    agent any
+    tools { nodejs "node-16" }
+    stages {
+        stage("Pull code") {
+            steps {
+                git branch: "develop", url: "https://github.com/hoantvtech/vue-testing.git"
+                sh "ls -lat"
+            }
+        }
+        stage("Build") {
+            steps {
+                sh "npm install"
+                sh "npm run build"
+                sh "tar -cvf dist.tar.gz dist"
+            }
+        }
+    }
+}

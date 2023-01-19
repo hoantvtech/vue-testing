@@ -51,3 +51,8 @@ npm run test:e2e
 ```sh
 npm run lint
 ```
+
+## Jenkins
+```bash
+$ cd /var/jenkins_home/workspace
+```
